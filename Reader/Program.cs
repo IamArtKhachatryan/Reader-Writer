@@ -9,8 +9,7 @@ namespace Reader
         static void Main()
         {
             string filePath = "C:\\Users\\DELL\\Desktop\\shared.txt";
-            //string filePath = "C:\\Users\\user\\Desktop\\shared.txt";
-
+            
             Console.WriteLine("Watching file: " + filePath);
             Console.WriteLine("Press Escape to stop.");
             Console.WriteLine();
