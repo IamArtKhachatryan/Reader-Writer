@@ -3,7 +3,6 @@
     static void Main()
     {
         string filePath = "C:\\Users\\DELL\\Desktop\\shared.txt";
-        //string filePath = "C:\\Users\\user\\Desktop\\shared.txt";
 
         bool fileHasContent = File.Exists(filePath) && new FileInfo(filePath).Length > 0;
 

@@ -35,8 +35,7 @@ namespace  Reader
                 fs.Seek(_lastPosition, SeekOrigin.Begin);
     
                 byte[] buffer = new byte[fs.Length - _lastPosition];
-                fs.Read(buffer, 0, buffer.Length);
-    
+                fs.ReadExactly(buffer, 0, buffer.Length);
                 _lastPosition = fs.Length;
     
                 return Encoding.UTF8.GetString(buffer);
