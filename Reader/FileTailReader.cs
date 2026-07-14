@@ -31,7 +31,7 @@ namespace  Reader
                     return "";
                 }
     
-                //putting cursor ar a bookmark
+                //putting cursor at a bookmark
                 fs.Seek(_lastPosition, SeekOrigin.Begin);
     
                 byte[] buffer = new byte[fs.Length - _lastPosition];
